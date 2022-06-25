@@ -608,8 +608,9 @@ async function fetch_image(type) {
 
 async function Draw(context) {
   /*const url = await fetch_image("");*/
-  const getInstagramUrl = require('./lib/getInstagramUrl');
-  const url = await getInstagramUrl("girl");
+  /*const getInstagramUrl = require('./lib/getInstagramUrl');
+  const url = await getInstagramUrl("girl");*/
+  const url = "https://instagram.ftpe13-2.fna.fbcdn.net/v/t51.2885-15/288329773_145201924764834_1108450247767745587_n.jpg?stp=dst-jpg_e35_p750x750_sh0.08&_nc_ht=instagram.ftpe13-2.fna.fbcdn.net&_nc_cat=106&_nc_ohc=6Fb9-9gf4Z0AX80kpJ3&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2MDMwOTM0NzM4NTY5ODIzNg%3D%3D.2-ccb7-5&oh=00_AT-XVaETvtbgoYZk4-gQj1zOsxbTEa6F2w0jYkR9MhoVdA&oe=62BE355E&_nc_sid=30a2ef";
   await replyImageHelper(context, url);
 }
 

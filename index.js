@@ -609,7 +609,7 @@ async function fetch_image(type) {
 async function Draw(context) {
   /*const url = await fetch_image("");*/
   const getInstagramUrl = require('./lib/getInstagramUrl');
-  const url = await getInstagramUrl(type);
+  const url = await getInstagramUrl("girl");
   await replyImageHelper(context, url);
 }
 

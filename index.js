@@ -607,9 +607,10 @@ async function fetch_image(type) {
 }
 
 async function Draw(context) {
-  const url = await fetch_image("");
-  /*await replyImageHelper(context, url);*/
-  await context.sendText("測試"+url);
+  /*const url = await fetch_image("");*/
+  const getInstagramUrl = require('./lib/getInstagramUrl');
+  const url = await getInstagramUrl(type);
+  await replyImageHelper(context, url);
 }
 
 async function DrawBTS(context) {

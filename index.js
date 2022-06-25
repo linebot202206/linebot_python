@@ -608,7 +608,8 @@ async function fetch_image(type) {
 
 async function Draw(context) {
   const url = await fetch_image("");
-  await replyImageHelper(context, url);
+  /*await replyImageHelper(context, url);*/
+  await context.sendText("測試"+url);
 }
 
 async function DrawBTS(context) {
